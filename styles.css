@@ -1,0 +1,28 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+
+:root {
+    --cor-de-fundo: #000000;
+    --branco: #181818;
+    --white: rgb(255, 255, 255);
+    --laranja: #0077ff;
+    --azul-degrade: linear-gradient(97.54deg, #2c0000 35.49%, #0019d6 145.37%);
+    --cinza-degrade: linear-gradient(97.54deg, #2c0000 35.49%, #0019d6 145.37%);
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+    --preto: rgb(255, 255, 255);
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

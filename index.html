@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="theater.png" width="45" height="40" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Music</b>Stage</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Eventos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ingressos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Favoritos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Minhas Compras</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Sobre Nós</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Eventos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Ingressos</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="heart.png" width="45" height="40" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="bag.png" width="45" height="40" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="user.png" width="45" height="40" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe qual artista quer ver?</h2>
+    <p class="banner__texto">Compre aqui os ingressos para eventos confirmados!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual o show dos seus sonhos?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+     
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+     
+        <div class="swiper-wrapper">
+        
+          <div class="swiper-slide"><img src="billie.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="gaga.jpeg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="dragons.jpeg" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="ariana.jpeg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="labrinth.jpeg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="cold.jpeg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+       
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro"></h2>
+            <p class="descrição__texto">
+              Veja aqui peças teatrais ou exposições.
+            </p>
+          </div>
+          <img src="heart.png" width="30" height="25" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="galery.jfif" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="teatro.jpg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+  
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+     
+          <div class="swiper-slide"><img src="taylor.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="post.jpg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="travis.jpeg" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="riha.jpg" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="justin.jpeg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="drake.webp" alt="livro sobre acessibilidade"></div>
+        </div>
+
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+       
+        <div class="card__descrição">
+         
+          <div class="descrição">
+            <img src="estrela.png" width="60" height="40" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Sobre Nós</h3>
+            <h2 class="descrição__titulo-livro">MUSIC STAGE</h2>
+            <p class="descrição__texto"> Empresa de vendas de ingressos para eventos confirmados de todos os artistas! 
+              Com o objetivo de facilitar sua compra e melhorar a experiência para o show dos seus sonhos!
+            </p>
+          </div>
+          
+          <img src="theater.png" width="70" height="70" class="descrição__imagem">
+        </div>
+
+       
+        <div class="card__botões">
+          
+          <ul class="botões">
+            <li class="botões__item"><img src="heart.png" width="30" height="30" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="bag.png" width="30" height="30" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+         
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Música</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Categorias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Eventos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Locais</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de eventos, shows e promoções!
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo MUSIC STAGE</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Empresas</li>
+      <li class="lista-rodapé__item">
+        <img src="music company.png" width="180" height="180" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Music Company</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="studio musical.png" width="180" height="180" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">CStudio Musical</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Parcerias</li>
+      <li class="lista-rodapé__item">
+        <img src="coachella.png" width="250" height="150" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Coachella</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="lolla.png" width="250" height="150" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">Lollapalooza</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="rockinrio.png" width="250" height="150" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Rock In Rio</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="thetown.jfif" width="250" height="150" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">The Town</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="tomorrowland.png" width="250" height="150" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">TomorrowLand</a>
+      </li>
+    
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Plataformas</li>
+      <li class="lista-rodapé__item">
+        <img src="spotify.png" width="250" height="150" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Spotify</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="deezer.png" width="250" height="180" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Deezer</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="amazon.png" width="250" height="150" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Amazon Music</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="icloud.png" width="250" height="150" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">ICloud Music</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="tiktok.png" width="200" height="100" alt="Logo do Carreira sem fronteiras" />
+        <a href="#" class="lista-rodapé__link">TikTok</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
